@@ -1,0 +1,12 @@
+{
+  "name": "sensify",
+  "displayName": "sensify",
+  "expo": {
+    "name": "sensify",
+    "slug": "sensify",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
