@@ -1,0 +1,186 @@
+[
+{
+	"id":"JS_VALUES",
+	"classType":"info",
+	"level":1,
+	"chapter":0,
+	"group":"A",
+	"type":"info",
+	"content":"VALUES\nJavaScript recognizes the following types of primitive values.\nNumbers : 125, 14.24586Logical (Boolean) : true, false\nStrings : 'JavaScript'\nnull : A special keyword denoting a null value; null is also a primitive value.\nundefined : A top-level property whose value is undefined."
+},
+{
+	"id":"JS_VARIABLES_NAMING_CONVENTIONS",
+	"type":"info",
+	"classType":"info",
+	"level":1,
+	"chapter":0,
+	"group":"A",
+	"content":"A JavaScript variable must start with a letter (A-Z, a-z), underscore (_), or dollar sign ($), subsequent characters can also be digits (0-9)."
+},
+{
+	"type":"video-lesson",
+	"group":"A",
+	"chapter":0,
+	"content":"Variables declaration part 1",
+	"tags":["variables declaration","var","let","const"],
+	"level":1,
+	"url":"https://www.youtube.com/watch?v=JNIXfGiDWM8&list=PLlrxD0HtieHhW0NCG7M536uHGOtJ95Ut2&index=10&ab_channel=MicrosoftDeveloper"
+},
+{
+	"classType":"question",
+	"chapter":0,
+	"group":"A",
+	"level":1,
+	"type":"yes_no_question",
+	"dependsOn":["JS_VARIABLES_NAMING_CONVENTIONS"],
+	"content":"Is this variable name valid in Javascript: $myVar ?",
+	"correct_answer":"yes"
+},
+{
+	"classType":"info",
+	"type":"info",
+	"chapter":0,
+	"group":"B",
+	"tags":["Javascript","Functions","Functions Declaration"],
+	"content":
+	"These are valid Javascript functions:\nfunction myFunc(foo, bar){\n// That's the classical declaration of a function in Javascript!\n}\nconst myFunction=function(foo, bar){\n// That's an assignment of a function into a variable (myFunction)\n}\nconst myFunction=(foo,bar)=>{\n// That's an arrow function supported by ES6\n}\n",
+	"level":1
+},
+{
+	"classType":"info",
+	"group":"B",
+	"chapter":0,
+	"type":"image-attachment",
+	"content":"some-funny-programmers-joke-324234.png",
+	"level":1,
+	"tags":["Javascript","Web programming"]
+},
+{
+	"type":"video-lesson",
+	"group":"B",
+	"content":"Variables declaration part 2",
+	"dependsOn":"Variables declaration part 1",
+	"tags":["variables declaration","var","let","const"],
+	"level":1,
+	"url":"https://www.youtube.com/watch?v=EQMPAaAo6Fc&list=PLlrxD0HtieHhW0NCG7M536uHGOtJ95Ut2&index=10&ab_channel=MicrosoftDeveloper"
+},
+{
+	"classType":"question",
+	"chapter":0,
+	"group":"C",
+	"level":1,
+	"type":"question",
+	"content":"Question1",
+	"dependsOn":["JS_VALUES"]
+},
+{
+	"classType":"question",
+	"chapter":0,
+	"group":"B",
+	"level":1,
+	"type":"question",
+	"content":"Question2",
+	"dependsOn":["JS_VALUES"]
+},
+{
+	"classType":"question",
+	"chapter":0,
+	"group":"C",
+	"level":1,
+	"type":"question",
+	"content":"Question3",
+	"dependsOn":["JS_VALUES"]
+},
+{
+	"id":"JS_VALUES",
+	"classType":"info",
+	"level":2,
+	"chapter":0,
+	"group":"D",
+	"type":"info",
+	"content":"VALUES\nJavaScript recognizes the following types of primitive values.\nNumbers : 125, 14.24586Logical (Boolean) : true, false\nStrings : 'JavaScript'\nnull : A special keyword denoting a null value; null is also a primitive value.\nundefined : A top-level property whose value is undefined."
+},
+{
+	"id":"JS_VARIABLES_NAMING_CONVENTIONS",
+	"type":"info",
+	"classType":"info",
+	"level":2,
+	"chapter":0,
+	"group":"D",
+	"content":"A JavaScript variable must start with a letter (A-Z, a-z), underscore (_), or dollar sign ($), subsequent characters can also be digits (0-9)."
+},
+{
+	"type":"video-lesson",
+	"group":"D",
+	"chapter":0,
+	"content":"Variables declaration part 1",
+	"tags":["variables declaration","var","let","const"],
+	"level":2,
+	"url":"https://www.youtube.com/watch?v=JNIXfGiDWM8&list=PLlrxD0HtieHhW0NCG7M536uHGOtJ95Ut2&index=10&ab_channel=MicrosoftDeveloper"
+},
+{
+	"classType":"question",
+	"chapter":0,
+	"group":"D",
+	"level":2,
+	"type":"yes_no_question",
+	"dependsOn":["JS_VARIABLES_NAMING_CONVENTIONS"],
+	"content":"Is this variable name valid in Javascript: $myVar ?",
+	"correct_answer":"yes"
+},
+{
+	"classType":"info",
+	"type":"info",
+	"chapter":0,
+	"group":"E",
+	"tags":["Javascript","Functions","Functions Declaration"],
+	"content":
+	"These are valid Javascript functions:\nfunction myFunc(foo, bar){\n// That's the classical declaration of a function in Javascript!\n}\nconst myFunction=function(foo, bar){\n// That's an assignment of a function into a variable (myFunction)\n}\nconst myFunction=(foo,bar)=>{\n// That's an arrow function supported by ES6\n}\n",
+	"level":2
+},
+{
+	"classType":"info",
+	"group":"E",
+	"chapter":0,
+	"type":"image-attachment",
+	"content":"some-funny-programmers-joke-324234.png",
+	"level":2,
+	"tags":["Javascript","Web programming"]
+},
+{
+	"type":"video-lesson",
+	"group":"E",
+	"content":"Variables declaration part 2",
+	"dependsOn":"Variables declaration part 1",
+	"tags":["variables declaration","var","let","const"],
+	"level":2,
+	"url":"https://www.youtube.com/watch?v=EQMPAaAo6Fc&list=PLlrxD0HtieHhW0NCG7M536uHGOtJ95Ut2&index=10&ab_channel=MicrosoftDeveloper"
+},
+{
+	"classType":"question",
+	"chapter":0,
+	"group":"F",
+	"level":2,
+	"type":"question",
+	"content":"Question1",
+	"dependsOn":["JS_VALUES"]
+},
+{
+	"classType":"question",
+	"chapter":0,
+	"group":"E",
+	"level":2,
+	"type":"question",
+	"content":"Question2",
+	"dependsOn":["JS_VALUES"]
+},
+{
+	"classType":"question",
+	"chapter":0,
+	"group":"F",
+	"level":2,
+	"type":"question",
+	"content":"Question3",
+	"dependsOn":["JS_VALUES"]
+}
+]
