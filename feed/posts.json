@@ -18,6 +18,7 @@
 	"content":"A JavaScript variable must start with a letter (A-Z, a-z), underscore (_), or dollar sign ($), subsequent characters can also be digits (0-9)."
 },
 {
+	"classType":"media",
 	"type":"video-lesson",
 	"group":"A",
 	"chapter":0,
@@ -56,6 +57,7 @@
 	"tags":["Javascript","Web programming"]
 },
 {
+	"classType":"media",
 	"type":"video-lesson",
 	"group":"B",
 	"content":"Variables declaration part 2",
@@ -110,6 +112,7 @@
 	"content":"A JavaScript variable must start with a letter (A-Z, a-z), underscore (_), or dollar sign ($), subsequent characters can also be digits (0-9)."
 },
 {
+	"classType":"media",
 	"type":"video-lesson",
 	"group":"D",
 	"chapter":0,
@@ -148,6 +151,7 @@
 	"tags":["Javascript","Web programming"]
 },
 {
+	"classType":"media",
 	"type":"video-lesson",
 	"group":"E",
 	"content":"Variables declaration part 2",

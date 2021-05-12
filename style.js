@@ -5,19 +5,12 @@ const styles = StyleSheet.create({
       flex: 1,
       marginTop: StatusBar.currentHeight || 0,
     },
-    info: {
-      backgroundColor: '#f9c2ff',
+    card: {
       padding: 20,
       marginVertical: 8,
       marginHorizontal: 16,
     },
-    funny: {
-      backgroundColor: '#33c2a7',
-      padding: 20,
-      marginVertical: 8,
-      marginHorizontal: 16,
-    },
-    title: {
+    text: {
       fontSize: 32,
     },
   });

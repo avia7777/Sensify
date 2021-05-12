@@ -2,17 +2,25 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import styles from '../style';
 
-const Card = ({ title, itemType }) => {
-  switch (itemType){
-    case "info":
-      itemStyle = styles.info;
-    case "funny-post":
-      itemStyle = styles.funny;
+const Card = ({ content, classType }) => {
+
+  const getStyle = () => {
+   if (classType === 'info') {
+    return {backgroundColor: '#f9c2ff'};
+   } else if (classType === 'question') {
+    return {backgroundColor: '#33c2a7'};
+   } else {
+    return {backgroundColor: '#9678bd'};
+   }
   }
 
+  itemStyleType = getStyle();
+
+  // console.log();
+
   return (
-    <View style={itemStyle}>
-      <Text style={styles.title}>{title}</Text>
+    <View style={[itemStyleType, styles.card]}>
+      <Text style={styles.text}>{content}</Text>
     </View>
   )};
 
