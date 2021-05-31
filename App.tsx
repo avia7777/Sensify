@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { SafeAreaView, View, FlatList, Text, StatusBar } from 'react-native';
-import Card from './components/Card';
+import Post from './components/Post';
 import styles from './style';
 import feedGenerator from './feed/FeedGenerator';
 
@@ -18,7 +18,7 @@ const App = () => {
       console.log("K ==> ", k);
       // console.log("Group ==> ", item.group);
       // console.log("content ==> ", item.content);
-      return {key: k, content: item.content, classType: item.classType};
+      return {...item, key: k};
     })
     let length = list.length;
     setKey(n => n+length);
@@ -35,7 +35,10 @@ const App = () => {
   }, [])
 
   const renderItem = ({ item }) => (
-    <Card content={item.content} classType={item.classType}/>
+    <Post {...item} />
+    // <Post content={item.content} classType={item.classType} topic={item.topic} 
+    // topicImage={item.topicImage} groupTitle={item.groupTitle} 
+    // postTitle={item.postTitle} />
   );
 
   const addItems = () => {
@@ -55,15 +58,15 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* <Text>Avia</Text> */}
       <FlatList
-        data={items}
-        renderItem={renderItem}
-        // keyExtractor={item => item.id}
-        onEndReached={addItems}
-      />
+          data={items}
+          renderItem={renderItem}
+          onEndReached={addItems}
+        />
     </SafeAreaView>
   );
 }
 
 export default App;
+
+// Delete before last page when add Items called

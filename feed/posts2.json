@@ -1,0 +1,29 @@
+[
+    {
+        "topic":"JAVA",
+        "level":1,
+        "group":"A",
+        "groupTitle":"CONSTRUCTOR TYPES IN JAVA",
+        "classType":"Info",
+        "postTitle":"no argument constructors",
+        "content":"The no argument constructors of java do not accept parameters. The use of constructor variables of a method with instances can be initialized having fixed values for objects."
+    },
+    {
+        "topic":"JAVA",
+        "level":1,
+        "group":"A",
+        "groupTitle":"CONSTRUCTOR TYPES IN JAVA",
+        "classType":"Info",
+        "postTitle":"constructor which accepts parameters",
+        "content":"Mostly a constructor which accepts parameters is needed. The parameters can be added to constructors as they are in methods by their declaration in constructors name."
+    },
+    {
+        "topic":"JAVA",
+        "level":1,
+        "group":"A",
+        "groupTitle":"CONSTRUCTOR TYPES IN JAVA",
+        "classType":"Info",
+        "postTitle":"default constructors",
+        "content":"The default constructors are automatically added in java as they initialize all the member variables with zero. but if one defines their own constructor, then the default constructors remove itself."
+    }
+]

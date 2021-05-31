@@ -1,5 +1,3 @@
-import FeedService from "./FeedService";
-
 class FeedGenerator {
     
     private PAGES = 5

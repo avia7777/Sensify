@@ -1,190 +1,122 @@
 [
-{
-	"id":"JS_VALUES",
-	"classType":"info",
-	"level":1,
-	"chapter":0,
-	"group":"A",
-	"type":"info",
-	"content":"VALUES\nJavaScript recognizes the following types of primitive values.\nNumbers : 125, 14.24586Logical (Boolean) : true, false\nStrings : 'JavaScript'\nnull : A special keyword denoting a null value; null is also a primitive value.\nundefined : A top-level property whose value is undefined."
-},
-{
-	"id":"JS_VARIABLES_NAMING_CONVENTIONS",
-	"type":"info",
-	"classType":"info",
-	"level":1,
-	"chapter":0,
-	"group":"A",
-	"content":"A JavaScript variable must start with a letter (A-Z, a-z), underscore (_), or dollar sign ($), subsequent characters can also be digits (0-9)."
-},
-{
-	"classType":"media",
-	"type":"video-lesson",
-	"group":"A",
-	"chapter":0,
-	"content":"Variables declaration part 1",
-	"tags":["variables declaration","var","let","const"],
-	"level":1,
-	"url":"https://www.youtube.com/watch?v=JNIXfGiDWM8&list=PLlrxD0HtieHhW0NCG7M536uHGOtJ95Ut2&index=10&ab_channel=MicrosoftDeveloper"
-},
-{
-	"classType":"question",
-	"chapter":0,
-	"group":"A",
-	"level":1,
-	"type":"yes_no_question",
-	"dependsOn":["JS_VARIABLES_NAMING_CONVENTIONS"],
-	"content":"Is this variable name valid in Javascript: $myVar ?",
-	"correct_answer":"yes"
-},
-{
-	"classType":"info",
-	"type":"info",
-	"chapter":0,
-	"group":"B",
-	"tags":["Javascript","Functions","Functions Declaration"],
-	"content":
-	"These are valid Javascript functions:\nfunction myFunc(foo, bar){\n// That's the classical declaration of a function in Javascript!\n}\nconst myFunction=function(foo, bar){\n// That's an assignment of a function into a variable (myFunction)\n}\nconst myFunction=(foo,bar)=>{\n// That's an arrow function supported by ES6\n}\n",
-	"level":1
-},
-{
-	"classType":"info",
-	"group":"B",
-	"chapter":0,
-	"type":"image-attachment",
-	"content":"some-funny-programmers-joke-324234.png",
-	"level":1,
-	"tags":["Javascript","Web programming"]
-},
-{
-	"classType":"media",
-	"type":"video-lesson",
-	"group":"B",
-	"content":"Variables declaration part 2",
-	"dependsOn":"Variables declaration part 1",
-	"tags":["variables declaration","var","let","const"],
-	"level":1,
-	"url":"https://www.youtube.com/watch?v=EQMPAaAo6Fc&list=PLlrxD0HtieHhW0NCG7M536uHGOtJ95Ut2&index=10&ab_channel=MicrosoftDeveloper"
-},
-{
-	"classType":"question",
-	"chapter":0,
-	"group":"C",
-	"level":1,
-	"type":"question",
-	"content":"Question1",
-	"dependsOn":["JS_VALUES"]
-},
-{
-	"classType":"question",
-	"chapter":0,
-	"group":"B",
-	"level":1,
-	"type":"question",
-	"content":"Question2",
-	"dependsOn":["JS_VALUES"]
-},
-{
-	"classType":"question",
-	"chapter":0,
-	"group":"C",
-	"level":1,
-	"type":"question",
-	"content":"Question3",
-	"dependsOn":["JS_VALUES"]
-},
-{
-	"id":"JS_VALUES",
-	"classType":"info",
-	"level":2,
-	"chapter":0,
-	"group":"D",
-	"type":"info",
-	"content":"VALUES\nJavaScript recognizes the following types of primitive values.\nNumbers : 125, 14.24586Logical (Boolean) : true, false\nStrings : 'JavaScript'\nnull : A special keyword denoting a null value; null is also a primitive value.\nundefined : A top-level property whose value is undefined."
-},
-{
-	"id":"JS_VARIABLES_NAMING_CONVENTIONS",
-	"type":"info",
-	"classType":"info",
-	"level":2,
-	"chapter":0,
-	"group":"D",
-	"content":"A JavaScript variable must start with a letter (A-Z, a-z), underscore (_), or dollar sign ($), subsequent characters can also be digits (0-9)."
-},
-{
-	"classType":"media",
-	"type":"video-lesson",
-	"group":"D",
-	"chapter":0,
-	"content":"Variables declaration part 1",
-	"tags":["variables declaration","var","let","const"],
-	"level":2,
-	"url":"https://www.youtube.com/watch?v=JNIXfGiDWM8&list=PLlrxD0HtieHhW0NCG7M536uHGOtJ95Ut2&index=10&ab_channel=MicrosoftDeveloper"
-},
-{
-	"classType":"question",
-	"chapter":0,
-	"group":"D",
-	"level":2,
-	"type":"yes_no_question",
-	"dependsOn":["JS_VARIABLES_NAMING_CONVENTIONS"],
-	"content":"Is this variable name valid in Javascript: $myVar ?",
-	"correct_answer":"yes"
-},
-{
-	"classType":"info",
-	"type":"info",
-	"chapter":0,
-	"group":"E",
-	"tags":["Javascript","Functions","Functions Declaration"],
-	"content":
-	"These are valid Javascript functions:\nfunction myFunc(foo, bar){\n// That's the classical declaration of a function in Javascript!\n}\nconst myFunction=function(foo, bar){\n// That's an assignment of a function into a variable (myFunction)\n}\nconst myFunction=(foo,bar)=>{\n// That's an arrow function supported by ES6\n}\n",
-	"level":2
-},
-{
-	"classType":"info",
-	"group":"E",
-	"chapter":0,
-	"type":"image-attachment",
-	"content":"some-funny-programmers-joke-324234.png",
-	"level":2,
-	"tags":["Javascript","Web programming"]
-},
-{
-	"classType":"media",
-	"type":"video-lesson",
-	"group":"E",
-	"content":"Variables declaration part 2",
-	"dependsOn":"Variables declaration part 1",
-	"tags":["variables declaration","var","let","const"],
-	"level":2,
-	"url":"https://www.youtube.com/watch?v=EQMPAaAo6Fc&list=PLlrxD0HtieHhW0NCG7M536uHGOtJ95Ut2&index=10&ab_channel=MicrosoftDeveloper"
-},
-{
-	"classType":"question",
-	"chapter":0,
-	"group":"F",
-	"level":2,
-	"type":"question",
-	"content":"Question1",
-	"dependsOn":["JS_VALUES"]
-},
-{
-	"classType":"question",
-	"chapter":0,
-	"group":"E",
-	"level":2,
-	"type":"question",
-	"content":"Question2",
-	"dependsOn":["JS_VALUES"]
-},
-{
-	"classType":"question",
-	"chapter":0,
-	"group":"F",
-	"level":2,
-	"type":"question",
-	"content":"Question3",
-	"dependsOn":["JS_VALUES"]
-}
+    {
+        "topic":"JAVA",
+        "topicImage": "https://e7.pngegg.com/pngimages/933/14/png-clipart-java-programming-language-computer-programming-object-oriented-programming-programmer-java-electronics-text.png",
+        "level":1,
+        "group":"A",
+        "groupTitle":"CONSTRUCTOR TYPES IN JAVA",
+        "classType":"Info",
+        "postTitle":"no argument constructors",
+        "content":"The no argument constructors of java do not accept parameters. The use of constructor variables of a method with instances can be initialized having fixed values for objects."
+    },
+    {
+        "topic":"JAVA",
+        "topicImage": "https://e7.pngegg.com/pngimages/933/14/png-clipart-java-programming-language-computer-programming-object-oriented-programming-programmer-java-electronics-text.png",
+        "level":1,
+        "group":"A",
+        "groupTitle":"CONSTRUCTOR TYPES IN JAVA",
+        "classType":"Info",
+        "postTitle":"constructor which accepts parameters",
+        "content":"Mostly a constructor which accepts parameters is needed. The parameters can be added to constructors as they are in methods by their declaration in constructors name."
+    },
+    {
+        "topic":"JAVA",
+        "topicImage": "https://e7.pngegg.com/pngimages/933/14/png-clipart-java-programming-language-computer-programming-object-oriented-programming-programmer-java-electronics-text.png",
+        "level":1,
+        "group":"A",
+        "groupTitle":"CONSTRUCTOR TYPES IN JAVA",
+        "classType":"Info",
+        "postTitle":"default constructors",
+        "content":"The default constructors are automatically added in java as they initialize all the member variables with zero. but if one defines their own constructor, then the default constructors remove itself."
+    },
+    {
+        "topic":"JAVA",
+        "topicImage": "https://e7.pngegg.com/pngimages/933/14/png-clipart-java-programming-language-computer-programming-object-oriented-programming-programmer-java-electronics-text.png",
+        "level":1,
+        "group":"A",
+        "groupTitle":"CONSTRUCTOR TYPES IN JAVA",
+        "classType":"Image",
+        "postTitle":"CONSTRUCTOR CHART",
+        "content":"https://www.techbeamers.com/wp-content/uploads/2019/04/Constructor-in-Java.png"
+    },
+    {
+        "topic":"JAVA",
+        "topicImage": "https://e7.pngegg.com/pngimages/933/14/png-clipart-java-programming-language-computer-programming-object-oriented-programming-programmer-java-electronics-text.png",
+        "level":1,
+        "group":"A",
+        "groupTitle":"CONSTRUCTOR TYPES IN JAVA",
+        "classType":"YN_Question",
+        "postTitle":"FINAL CONSTRUCTOR",
+        "content":"Can a constructor in java be final?"
+    },
+    {
+        "topic":"JAVA",
+        "topicImage": "https://e7.pngegg.com/pngimages/933/14/png-clipart-java-programming-language-computer-programming-object-oriented-programming-programmer-java-electronics-text.png",
+        "level":1,
+        "group":"B",
+        "groupTitle":"DATA TYPES IN JAVA",
+        "classType":"Info",
+        "postTitle":"FLOAT DATA TYPE",
+        "content":"It is a single precision with 32-bit.\nThis data type can be used to save memory in arrays which are large.\nBy Default, its value is 0.0f.\nIt can not be used for precise values.\nExample: floatf2=123.4f."
+    },
+    {
+        "topic":"JAVA",
+        "topicImage": "https://e7.pngegg.com/pngimages/933/14/png-clipart-java-programming-language-computer-programming-object-oriented-programming-programmer-java-electronics-text.png",
+        "level":1,
+        "group":"B",
+        "groupTitle":"DATA TYPES IN JAVA",
+        "classType":"Info",
+        "postTitle":"DOUBLE DATA TYPE",
+        "content":"It is double-precision with 64-bit.\nIt is generally used for decimal values.\nIt can never be used for precise values.\nBy default, its value is 0.0d.\nExample: double d2 = 111.6"
+    },
+    {
+        "topic":"JAVA",
+        "topicImage": "https://e7.pngegg.com/pngimages/933/14/png-clipart-java-programming-language-computer-programming-object-oriented-programming-programmer-java-electronics-text.png",
+        "level":1,
+        "group":"B",
+        "groupTitle":"DATA TYPES IN JAVA",
+        "classType":"Info",
+        "postTitle":"BOOLEAN DATA TYPE",
+        "content":"It is used to represent one bit of data.\nThey can be either: true/false, 0/1 etc.\nby default, its value is false.\nExample: Boolean two = false"
+    },
+    {
+        "topic":"JAVA",
+        "topicImage": "https://e7.pngegg.com/pngimages/933/14/png-clipart-java-programming-language-computer-programming-object-oriented-programming-programmer-java-electronics-text.png",
+        "level":1,
+        "group":"B",
+        "groupTitle":"DATA TYPES IN JAVA",
+        "classType":"Video",
+        "postTitle":"DATA TYPES VIDEO",
+        "content":"vhV97hyV0fc"
+    },
+    {
+        "topic":"JAVA",
+        "topicImage": "https://e7.pngegg.com/pngimages/933/14/png-clipart-java-programming-language-computer-programming-object-oriented-programming-programmer-java-electronics-text.png",
+        "level":1,
+        "group":"B",
+        "groupTitle":"DATA TYPES IN JAVA",
+        "classType":"YN_Question",
+        "postTitle":"DOUBLE DATA TYPE",
+        "content":"Is DOUBLE data types a floating data type?"
+    },
+    {
+        "topic":"JAVA",
+        "topicImage": "https://e7.pngegg.com/pngimages/933/14/png-clipart-java-programming-language-computer-programming-object-oriented-programming-programmer-java-electronics-text.png",
+        "level":2,
+        "group":"C",
+        "groupTitle":"CONDITIONAL STATEMENTS IN JAVA",
+        "classType":"Info",
+        "postTitle":"‘IF’ STATEMENT",
+        "content":"‘If’ statement contains a condition having one or more statements which get executed when condition is true.\nThey are completely ignored if condition is false.\nExample:\npublic class IfStatementExample {\n\tpublic static void main (String args[]){\n\t\tint numb=60;\n\t\tif( numb < 90){\n\t\t\t/* This println statement will only execute,\n\t\t\t * if the above condition is true\n\t\t\t */\n\t\t\tSystem.out.println('number is less than 90');\n\t\t}\n\t}\n}\nOutput:\nnumber is less than 100"
+    },
+    {
+        "topic":"JAVA",
+        "topicImage": "https://e7.pngegg.com/pngimages/933/14/png-clipart-java-programming-language-computer-programming-object-oriented-programming-programmer-java-electronics-text.png",
+        "level":2,
+        "group":"C",
+        "groupTitle":"CONDITIONAL STATEMENTS IN JAVA",
+        "classType":"Image",
+        "postTitle":"IF STATEMENT FLOW DIAGRAM",
+        "content":"https://beginnersbook.com/wp-content/uploads/2017/08/if_statement_flow_diagram.jpg"
+    }
 ]
