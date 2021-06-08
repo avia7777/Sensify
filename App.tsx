@@ -34,12 +34,7 @@ const App = () => {
     setPages(initFeedPages);
   }, [])
 
-  const renderItem = ({ item }) => (
-    <Post {...item} />
-    // <Post content={item.content} classType={item.classType} topic={item.topic} 
-    // topicImage={item.topicImage} groupTitle={item.groupTitle} 
-    // postTitle={item.postTitle} />
-  );
+  const renderItem = ({ item }) => (<Post {...item} />);
 
   const addItems = () => {
     if (pages.length > 0) {

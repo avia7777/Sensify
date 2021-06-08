@@ -1,7 +1,8 @@
+
 class FeedGenerator {
     
-    private PAGES = 5
-    private POSTS_FOR_PAGE = 10;
+    private static PAGES = 5
+    private POSTS_FOR_PAGE = 12;
     private counter = 0;
 
     public generatePages = () => {
@@ -16,7 +17,7 @@ class FeedGenerator {
             // console.log(feedJsonString);
             // const posts = JSON.parse(feedJsonString);
             
-            for (let i = 1; i <= this.PAGES; i++){
+            for (let i = 1; i <= FeedGenerator.PAGES; i++){
                 let feedPage = [];
                 // console.log("Feed Page ==> ", feedPage);
                 for (let j = 0; j < this.POSTS_FOR_PAGE; j++) {

@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import { View, Text, Image } from 'react-native';
-import styles from '../style';
 
 const ImagePost = ({ content })=> {
     
-    const [ratio, setRatio] = useState(100);
+    const [ratio, setRatio] = useState(1);
 
     Image.getSize(content, (width, height)=> {
         setRatio(width/height);
@@ -14,11 +13,8 @@ const ImagePost = ({ content })=> {
         <View>
             <Image
                 style={{width: '100%', aspectRatio: ratio}}
-                source={{
-                    uri: content,
-                }}
+                source={{uri: content}}
             />
-            {/* <Text>{ratio}</Text> */}
         </View>
     )
 }

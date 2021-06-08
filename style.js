@@ -2,7 +2,7 @@ import { StyleSheet, StatusBar } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-      // flex: 1,
+      flex: 1,
       marginTop: StatusBar.currentHeight || 0,
       backgroundColor: 'black',
       color: '#12ee12',
@@ -26,18 +26,28 @@ const styles = StyleSheet.create({
       paddingVertical: 5,
     },
     tinyLogo: {
-      width: 50,
-      height: 50,
-      borderRadius: 25,
-      backgroundColor: "#bebebe",
+      width: 30,
+      height: 30,
     },
-    button: {
+    questionButton: {
       alignItems: "center",
       backgroundColor: '#5C9181',
       borderRadius: 10,
       marginHorizontal: 20,
       marginVertical: 5,
       padding: 10,
+    },
+    postBottom: {
+      flexDirection: 'row',
+      marginTop: 15,
+      paddingTop: 10,
+      borderTopWidth: 0.5,
+      borderTopColor: '#e4e6eb',
+    },
+    imageTextButton: {
+      flexDirection:"row",
+      alignItems: 'center',
+      justifyContent:'center'
     },
   });
 

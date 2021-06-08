@@ -6,6 +6,8 @@ import ImagePost from './ImagePost';
 import VideoPost from './VideoPost';
 import YNQuestionPost from './YNQuestionPost';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import PostBottom from './PostBottom';
+
 
 const components = {
   Info: InfoPost,
@@ -42,8 +44,7 @@ const Post = (props) => {
       </View>
       <Text style={styles.text} >{props.postTitle}</Text>
       <PostComponent content={props.content}/>
-      {/* <Info content={props.content}/> */}
-      {/* <Text style={styles.text}>{content}</Text> */}
+      <PostBottom />
     </View>
   )};
 

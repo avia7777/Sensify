@@ -7,10 +7,10 @@ const YNQuestionPost = ({ content })=> {
     return (
         <View>
             <Text style={styles.text}>{content}</Text>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.questionButton}>
                 <Text>Yes</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.questionButton}>
                 <Text>No</Text>
             </TouchableOpacity>
         </View>
