@@ -23,7 +23,7 @@ const Post = (props) => {
   return (
     <View style={styles.post}>
       <View style={styles.postHeader}>
-        <View style={{flexDirection: 'row'}} >
+        <View style={{flexDirection: 'row-reverse'}} >
           <Image
             style={[styles.tinyLogo, {marginRight: 5}]}
             source={{

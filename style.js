@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
       color: '#12ee12',
     },
     postHeader: {
-      flexDirection: 'row',
+      flexDirection: 'row-reverse',
       justifyContent: 'space-between',
       marginVertical: 5,
       paddingHorizontal: 15,
@@ -28,6 +28,9 @@ const styles = StyleSheet.create({
     tinyLogo: {
       width: 30,
       height: 30,
+      borderRadius: 15,
+      borderWidth: 0.5,
+      borderColor: 'black',
     },
     questionButton: {
       alignItems: "center",
