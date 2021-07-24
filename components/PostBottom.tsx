@@ -8,10 +8,10 @@ function PostBottom() {
         <View style={styles.postBottom}>
             <View style={{flex: 1}}>
                 <TouchableOpacity style={styles.imageTextButton}>
-                    <Image
+                    {/* <Image
                         style={styles.tinyLogo}
                         source={require('../assets/like.png')}
-                    />
+                    /> */}
                     <Text style={[styles.text, {fontWeight: 'bold'}]}>Like</Text>
                 </TouchableOpacity>
             </View>

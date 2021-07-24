@@ -16,15 +16,18 @@ export default class FeedStore {
     private pagesIndex = 0;
 
     constructor() {
-        makeAutoObservable(this);
-        (async ()=>{
-            this.fetchPages();
-        })();
+        makeObservable(this, {
+            pages: observable,
+            nextPage: computed,
+            // @ts-ignore
+            fetchPages: action
+
+        });
     }
 
-    private async fetchPages() {
+    public async fetchPages() {
         try {
-            const resObj = await fetch('http://172.29.107.144:3000/feed');
+            const resObj = await fetch('http://thymos.life/feed');
             const res = await resObj.json();
             runInAction(()=>{
                 this.pages = [];
@@ -32,6 +35,7 @@ export default class FeedStore {
                     this.pages.push(page.posts)
                 });
             });
+            console.log("Success to fetch feed pages");
         } catch(e) {
             console.log("Failed to fetch feed pages - ", e)
         }
@@ -50,11 +54,6 @@ export default class FeedStore {
         }
     }
 
-    public get totalPages() {
-
-        return this.pages.length;
-    }
 }
 
 export const pagesStore = new FeedStore();
-console.log("Next Page => ", pagesStore.nextPage);

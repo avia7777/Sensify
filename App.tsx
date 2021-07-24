@@ -13,7 +13,6 @@ const App = observer(() => {
 
   const addItems = () => {
     console.log(`There are ${items.length} posts on feed!!!`);
-    console.log(`There are ${pagesStore.totalPages} pages of posts.`);
     const nextPage = pagesStore.nextPage;
     if (nextPage) {
       setItems((i) =>{
@@ -29,7 +28,10 @@ const App = observer(() => {
   }
 
   useEffect(() => {
-    addItems();
+    (async ()=>{
+      await pagesStore.fetchPages();
+      addItems();
+    })();
   }, [])
 
   return (
