@@ -16,36 +16,42 @@ const components = {
   YN_Question: YNQuestionPost,
 };
 
-const Post = (props) => {
+class Post extends React.PureComponent<any, any> {
+  constructor(props) {
+   super(props)
+    props = this.props;
+  }
 
-  const PostComponent = components[props.classType];
-
-  return (
-    <View style={styles.post}>
-      <View style={styles.postHeader}>
-        <View style={{flexDirection: 'row-reverse'}} >
-          <Image
-            style={[styles.tinyLogo, {marginRight: 5}]}
-            source={{
-              uri: props.topicImage,
-            }}
-          />
-          <View>
-            <Text style={[styles.text, {fontWeight: 'bold'}]} >{props.topic}</Text>
-            <Text style={[styles.text, {fontWeight: 'bold'}]} >{props.groupTitle}</Text>
+  render (){
+    const PostComponent = components[this.props.classType];
+    return(
+      <View style={styles.post}>
+            <View style={styles.postHeader}>
+              <View style={{flexDirection: 'row-reverse'}} >
+                <Image
+                  style={[styles.tinyLogo, {marginRight: 5}]}
+                  source={{
+                    uri: this.props.topicImage,
+                  }}
+                />
+                <View>
+                  <Text style={[styles.text, {fontWeight: 'bold'}]} >{this.props.topic}</Text>
+                  <Text style={[styles.text, {fontWeight: 'bold'}]} >{this.props.groupTitle}</Text>
+                </View>
+              </View>
+              <TouchableOpacity>
+                <Image
+                  style={styles.tinyLogo}
+                  source={require('../assets/bookmark.png')}
+                />
+              </TouchableOpacity>
+            </View>
+            <Text style={styles.text} >{this.props.postTitle}</Text>
+            <PostComponent content={this.props.content}/>
+            <PostBottom />
           </View>
-        </View>
-        <TouchableOpacity>
-          <Image
-            style={styles.tinyLogo}
-            source={require('../assets/bookmark.png')}
-          />
-        </TouchableOpacity>
-      </View>
-      <Text style={styles.text} >{props.postTitle}</Text>
-      <PostComponent content={props.content}/>
-      <PostBottom />
-    </View>
-  )};
+    );
+  } 
+};
 
 export default Post;
